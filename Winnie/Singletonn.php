@@ -21,7 +21,7 @@ class MySingleton
 
     public function hazAlgo()
     {
-        echo 'Escribimos algo por pantalla.'.PHP_EOL;
+        echo 'Grrrrrrrrrr'.PHP_EOL;
         ++$this->counter;
     }
 
@@ -34,14 +34,18 @@ class MySingleton
 MySingleton::getInstance()->hazAlgo();
 MySingleton::getInstance()->hazAlgo();
 MySingleton::getInstance()->hazAlgo();
+MySingleton::getInstance()->hazAlgo();
+MySingleton::getInstance()->hazAlgo();
 
 echo 'Contador = '.mySingleton::getInstance()->getCounter().PHP_EOL;
 
 
 /*
 Contruyendo objeto..
-Escribimos algo por pantalla.
-Escribimos algo por pantalla.
-Escribimos algo por pantalla.
-Contador = 3
+Grrrrrrrr
+Grrrrrrrr
+Grrrrrrrr
+Grrrrrrrr
+Grrrrrrrr
+Contador = 5
 */

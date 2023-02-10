@@ -2,15 +2,14 @@
 
 class Tigger {
 
-private $counter = 0;
-private $count;    
+private static $counter;
+//private $count;    
 
 public function __construct($counter){
 
     $this->counter=$counter;
     echo "Building character..". PHP_EOL;
     $this->Singleton = new Singleton();
-    
 }
 
 //$rtigger = new Singleton();
@@ -18,16 +17,16 @@ public function __construct($counter){
 
 static function roar($counter){
 
-    ++$count;
-    echo " Grrr!". PHP_EOL;
+    echo "Grrrrr!". PHP_EOL;
+    echo "<br>";
     //$count=$counter;
     //return $count;
+    //++$this->count;
 }
+public static function getCounter(){
 
-public function getCounter(){
-
-    return $counter;
+    return self::$counter;
+    //echo $this->counter;
 }
-
 }
 ?>

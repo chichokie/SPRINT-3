@@ -24,6 +24,7 @@ class Singleton {
 
         //global $counter;
         echo " ssssss  ";
+        echo "<br>";
         //return $counter;
     }
 
